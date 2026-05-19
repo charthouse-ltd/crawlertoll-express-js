@@ -1,0 +1,76 @@
+{
+  "name": "@crawlertoll/express",
+  "version": "0.1.0",
+  "description": "Express middleware for the AI-crawler economy. Wires @crawlertoll/core into req/res with one line. Detects AI crawlers, verifies Web Bot Auth signatures, applies RSL 1.0 policy, and issues HTTP 402 with a structured payment offer.",
+  "license": "Apache-2.0",
+  "author": "Charthouse Ltd",
+  "homepage": "https://crawlertoll.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nhrzxxw9dn-web/crawlertoll-express-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nhrzxxw9dn-web/crawlertoll-express-js/issues"
+  },
+  "keywords": [
+    "express",
+    "express-middleware",
+    "ai-crawler",
+    "pay-per-crawl",
+    "web-bot-auth",
+    "rsl",
+    "rsl-1.0",
+    "bot-detection",
+    "gptbot",
+    "claudebot",
+    "http-402",
+    "x402",
+    "crawler-toll"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --clean",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "peerDependencies": {
+    "express": "^4.18.0 || ^5.0.0"
+  },
+  "dependencies": {
+    "@crawlertoll/core": "^0.1.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.5",
+    "@types/supertest": "^6.0.2",
+    "express": "^5.0.0",
+    "supertest": "^7.0.0",
+    "tsup": "^8.3.6",
+    "typescript": "^5.7.3",
+    "vitest": "^3.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
