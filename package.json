@@ -1,16 +1,16 @@
 {
   "name": "@crawlertoll/express",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Express middleware for the AI-crawler economy. Wires @crawlertoll/core into req/res with one line. Detects AI crawlers, verifies Web Bot Auth signatures, applies RSL 1.0 policy, and issues HTTP 402 with a structured payment offer.",
   "license": "Apache-2.0",
   "author": "Charthouse Ltd",
   "homepage": "https://crawlertoll.com",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nhrzxxw9dn-web/crawlertoll-express-js.git"
+    "url": "git+https://github.com/charthouse-ltd/crawlertoll-express-js.git"
   },
   "bugs": {
-    "url": "https://github.com/nhrzxxw9dn-web/crawlertoll-express-js/issues"
+    "url": "https://github.com/charthouse-ltd/crawlertoll-express-js/issues"
   },
   "keywords": [
     "express",

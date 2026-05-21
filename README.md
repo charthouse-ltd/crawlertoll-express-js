@@ -183,7 +183,7 @@ app.use(crawlertoll({
 Run them:
 
 ```bash
-git clone https://github.com/crawlertoll/crawlertoll-express-js
+git clone https://github.com/charthouse-ltd/crawlertoll-express-js
 cd crawlertoll-express-js
 npm install
 npm test
@@ -207,3 +207,7 @@ If your framework isn't listed, use `@crawlertoll/core`'s `decide()` directly â€
 ## License
 
 [Apache-2.0](./LICENSE). All specs implemented are open standards under their own licenses.
+
+## Trademark
+
+CrawlerTollâ„¢ is a trademark of Charthouse Ltd.
